@@ -1,0 +1,41 @@
+{
+  "name": "transaction-service",
+  "version": "1.0.0",
+  "description": "Transaction Service Microservices Architecture",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "seed": "ts-node src/scripts/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/express-validator": "^3.0.2",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.13.11",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.12.2",
+    "typescript": "^5.8.2",
+    "xlsx": "^0.18.5",
+    "winston": "^3.11.0",
+    "amqplib": "^0.10.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node-dev": "^2.0.0"
+  }
+}
